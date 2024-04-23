@@ -16,7 +16,7 @@ const io = socketio(server, {
   });
  io.on('connection', (socket) => {
     console.log('new connection');
-    socket.emit('welcome','connection started sucesffuly ');
+    socket.emit('welcome','connection started sucesffuly  ');
     // socket.on('disconnect', () => {
     //     console.log('user disconnected');
     // });

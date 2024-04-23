@@ -1,0 +1,9 @@
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  const socket = io('http://localhost:3000');
+  socket.on('messageFormServer', (messageFormServer) => {
+    console.log(messageFormServer);
+    socket.emit('messageFormClient',{data:'This is message form client'});
+  });
+</script>
+<!-- <h1>  hello this is for testing purposes </h1> -->
